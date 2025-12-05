@@ -159,6 +159,7 @@ function M.init_playground(filename)
     })
   end
 
+  vim.cmd("set buftype=nofile")
   vim.cmd("startinsert")
 end
 
