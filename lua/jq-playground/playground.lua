@@ -158,6 +158,8 @@ function M.init_playground(filename)
       desc = "Default for JqPlaygroundRunQuery",
     })
   end
+
+  vim.cmd("startinsert")
 end
 
 return M
