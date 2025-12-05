@@ -144,7 +144,7 @@ function M.init_playground(filename)
   end)
   virt_text_hint(query_buf, "Run your query with <CR>.")
 
-  vim.keymap.set({ "n", "i" }, "<Plug>(JqPlaygroundRunQuery)", function()
+  vim.keymap.set({ "n", "i" }, "<CR>", function()
     run_query(cfg.cmd, filename or curbuf, query_buf, output_buf)
   end, {
     buffer = query_buf,
